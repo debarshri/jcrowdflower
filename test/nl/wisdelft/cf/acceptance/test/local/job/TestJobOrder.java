@@ -12,7 +12,7 @@ import java.io.*;
 
 public class TestJobOrder {
 
-
+    @Ignore
     @Test
     public void test() throws IOException
     {
@@ -83,8 +83,6 @@ public class TestJobOrder {
 *
 */
         	order.create();
-
-
     }
 
 }

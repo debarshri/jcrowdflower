@@ -17,6 +17,12 @@ Credits to
 
 This projects is a Java wrapper for web APIs exposed by CrowdFlower. This project is located in `master` branch.
 
+You need to build the project as follows
+
+```
+  mvn clean install
+```
+
 
 ### Tutorial
 
@@ -25,6 +31,15 @@ Simple job creation
 #### Note
 - Create a file called default.properties.
 - Add a property apiKey="your-api-key"
+- Include this project in your pom.xml as follows
+
+```
+<dependency>
+    <groupId>crowdflower-java</groupId>
+    <artifactId>crowdflower-java</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+<dependency>
+```
 
 Then the following is the implementation for creating a job
 
