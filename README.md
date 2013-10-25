@@ -33,11 +33,13 @@ package nl.wisdelft.cf.acceptance.test.local.examples;
 
 import nl.wisdelft.cf.*;
 import nl.wisdelft.cf.datamodel.*;
+import nl.wisdelft.cf.exception.*;
 import nl.wisdelft.cf.job.*;
+import nl.wisdelft.cf.order.*;
 
 public class CrowdFlowerTutorial {
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws NullAPIKeyException, InterruptedException
     {
         /**
          * Alternatively you can declare it as
@@ -51,14 +53,34 @@ public class CrowdFlowerTutorial {
          * You must have following three properties to create a job successfully
          */
 
-        myJob.addProperty(JobAttribute.TITLE,"Test Job title");
-        myJob.addProperty(JobAttribute.INSTRUCTIONS,"Test instructions");
-        myJob.addProperty(JobAttribute.CML,"<cml>Test cml </cml>");
+        myJob.addProperty(JobAttribute.TITLE, "Test Job title");
+        myJob.addProperty(JobAttribute.INSTRUCTIONS, "Test instructions");
+        myJob.addProperty(JobAttribute.CML, "<cml>Test cml </cml>");
+        myJob.addProperty(JobAttribute.PAGES_PER_ASSIGNMENT,
+                          "0.1");
+        myJob.addProperty(JobAttribute.UNITS_PER_ASSIGNMENT,
+                          "1");
 
         Job myJobAfterCreation = myJobController.create(myJob);
+
+        myJobController.upload(myJobAfterCreation, "log/crowd.csv", "text/csv");
+
+        OrderController order = myJobController.order(myJobAfterCreation.getId());
+
+        order.setDebitUnitCount("3");
+        order.addChannel("amt");
+
+        /*
+        * Costs money
+        */
+
+        order.create();
+        /**
+         * Takes some time to create
+         */
+        order.cancel(myJobAfterCreation.getId());
     }
 }
-
 
 ```
 

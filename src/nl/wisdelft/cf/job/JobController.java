@@ -92,7 +92,7 @@ public interface JobController {
      * @Web [ web call ] Creates an new order for the job
      */
 
-    public Order order(String aJobId);
+    public OrderController order(String aJobId);
 
     /**
      * [ web call ] Pauses the job

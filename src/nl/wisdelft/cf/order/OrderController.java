@@ -1,6 +1,6 @@
 package nl.wisdelft.cf.order;
 
-public interface Order {
+public interface OrderController {
 
     // Check Parameters
     public void create();
@@ -10,5 +10,7 @@ public interface Order {
     public void addChannel(String channel);
 
     public void setDebitUnitCount(String count);
+
+    public void cancel(String id);
 
 }

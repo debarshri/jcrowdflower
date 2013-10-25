@@ -1,6 +1,7 @@
 package nl.wisdelft.cf.order;
 
 import nl.wisdelft.cf.*;
+import nl.wisdelft.cf.job.*;
 import nl.wisdelft.cf.weblayer.*;
 import org.apache.http.*;
 import org.apache.http.message.*;
@@ -9,7 +10,7 @@ import org.fest.util.*;
 import java.net.*;
 import java.util.*;
 
-public class OrderImpl implements Order {
+public class OrderControllerImpl implements OrderController {
 
     private String apiKey;
     private String url = "https://api.crowdflower.com/v1/jobs/";
@@ -18,13 +19,12 @@ public class OrderImpl implements Order {
     private WebUtil theWebUtil;
     private WebCall theWebCall;
 
-    public OrderImpl(String jobId)
+    public OrderControllerImpl(String jobId)
     {
        this(jobId, new CrowdFlowerFactory());
     }
 
-    @VisibleForTesting
-    OrderImpl(
+    @VisibleForTesting OrderControllerImpl(
             String aJobId,
             CrowdFlowerFactory aCrowdFlowerFactory)
     {
@@ -32,15 +32,14 @@ public class OrderImpl implements Order {
         attributes = aCrowdFlowerFactory.createAttributes();
     }
 
-    public OrderImpl(
+    public OrderControllerImpl(
             String jobId,
             String apiKey)
     {
         this(jobId,apiKey, new CrowdFlowerFactory());
     }
 
-    @VisibleForTesting
-    OrderImpl(
+    @VisibleForTesting OrderControllerImpl(
             String aJobId,
             String aApiKey,
             CrowdFlowerFactory aCrowdFlowerFactory)
@@ -57,7 +56,7 @@ public class OrderImpl implements Order {
     @Override
     public void create()
     {
-        url = url + jobId + "/orders.json";
+        url = url + jobId + "/orders.json?key="+apiKey;
         theWebCall.create(url,
                        attributes);
     }
@@ -91,5 +90,12 @@ public class OrderImpl implements Order {
     {
         attributes.add(new BasicNameValuePair("debit[units_count]",
                                               count));
+    }
+
+    @Override
+    public void cancel(final String aJobId)
+    {
+        JobController myJobController = CrowdFlowerFactory.getJobController();
+        myJobController.cancel(aJobId);
     }
 }
