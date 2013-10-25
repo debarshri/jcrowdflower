@@ -52,7 +52,7 @@ public class CrowdFlowerTutorial {
 
         myJob.addProperty(JobAttribute.TITLE,"Test Job title");
         myJob.addProperty(JobAttribute.INSTRUCTIONS,"Test instructions");
-        myJob.addProperty(JobAttribute.CML,"<cml>nl.wisdelft.cf.acceptance.test cml </cml>");
+        myJob.addProperty(JobAttribute.CML,"<cml>Test cml </cml>");
 
         Job myJobAfterCreation = myJobController.create(myJob);
     }
