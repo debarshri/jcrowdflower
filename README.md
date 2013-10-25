@@ -1,4 +1,4 @@
-crowdery
+JCrowdFlower
 =======
 JCrowdflower is a library for crowdflower web interface wrapped up in java.
 
