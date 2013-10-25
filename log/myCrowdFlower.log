@@ -1,0 +1,203 @@
+01:42:45,239  INFO Account:38 - Adding account attributes
+     12:13:48,469  INFO JobController:158 - Uploading data in job with id  - 1 from path nl.wisdelft.cf.acceptance.test-path
+     16:25:15,088  INFO Job:91 - Adding aPropertytitle to job with id  - 
+     16:25:15,109  INFO Job:91 - Adding aPropertyinstructions to job with id  - 
+     16:25:15,112  INFO Job:91 - Adding aPropertycml to job with id  - 
+     16:25:15,114  INFO JobController:81 - Create the job with id  -  
+     16:25:15,292  INFO UnitControllerImpl:77 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:19,869  INFO Job:91 - Adding aPropertyinstructions to job with id  - 
+     16:25:19,870  INFO Job:91 - Adding aPropertyjs to job with id  - 
+     16:25:19,871  INFO Job:91 - Adding aPropertyjudgments_count to job with id  - 
+     16:25:19,872  INFO Job:91 - Adding aPropertymax_judgments_per_ip to job with id  - 
+     16:25:19,873  INFO Job:91 - Adding aPropertydesign_verified to job with id  - 
+     16:25:19,874  INFO Job:91 - Adding aPropertyauto_order to job with id  - 
+     16:25:19,874  INFO Job:91 - Adding aPropertyauto_order_timeout to job with id  - 
+     16:25:19,878  INFO Job:91 - Adding aPropertyjudgments_per_unit to job with id  - 
+     16:25:19,879  INFO Job:91 - Adding aPropertyexpected_judgments_per_unit to job with id  - 
+     16:25:19,882  INFO Job:91 - Adding aPropertymax_judgments_per_unit to job with id  - 
+     16:25:19,883  INFO Job:91 - Adding aPropertypublic_data to job with id  - 
+     16:25:19,884  INFO Job:91 - Adding aPropertyrequire_worker_login to job with id  - 
+     16:25:19,885  INFO Job:91 - Adding aPropertyfields to job with id  - 
+     16:25:19,885  INFO Job:91 - Adding aPropertymax_judgments_per_worker to job with id  - 
+     16:25:19,886  INFO Job:91 - Adding aPropertyincluded_countries to job with id  - 
+     16:25:19,887  INFO Job:91 - Adding aPropertyworker_ui_remix to job with id  - 
+     16:25:19,888  INFO Job:91 - Adding aPropertycompleted_at to job with id  - 
+     16:25:19,889  INFO Job:91 - Adding aPropertyminimum_requirements to job with id  - 
+     16:25:19,890  INFO Job:91 - Adding aPropertyunits_per_assignment to job with id  - 
+     16:25:19,891  INFO Job:91 - Adding aPropertyproject_number to job with id  - 
+     16:25:19,892  INFO Job:91 - Adding aPropertymax_unit_confidence to job with id  - 
+     16:25:19,893  INFO Job:91 - Adding aPropertycustom_key to job with id  - 
+     16:25:19,894  INFO Job:91 - Adding aPropertysupport_email to job with id  - 
+     16:25:19,894  INFO Job:91 - Adding aPropertyupdated_at to job with id  - 
+     16:25:19,895  INFO Job:91 - Adding aPropertyauto_order_threshold to job with id  - 
+     16:25:19,896  INFO Job:91 - Adding aPropertyminimum_account_age_seconds to job with id  - 
+     16:25:19,897  INFO Job:91 - Adding aPropertymin_unit_confidence to job with id  - 
+     16:25:19,898  INFO Job:91 - Adding aPropertylanguage to job with id  - 
+     16:25:19,899  INFO Job:91 - Adding aPropertydesired_requirements to job with id  - 
+     16:25:19,900  INFO Job:91 - Adding aPropertycss to job with id  - 
+     16:25:19,901  INFO Job:91 - Adding aPropertygold_per_assignment to job with id  - 
+     16:25:19,902  INFO Job:91 - Adding aPropertyexcluded_countries to job with id  - 
+     16:25:19,902  INFO Job:91 - Adding aPropertystate to job with id  - 
+     16:25:19,906  INFO Job:91 - Adding aPropertyexecution_mode to job with id  - 
+     16:25:19,907  INFO Job:91 - Adding aPropertygolds_count to job with id  - 
+     16:25:19,908  INFO Job:91 - Adding aPropertywebhook_uri to job with id  - 
+     16:25:19,909  INFO Job:91 - Adding aPropertycml to job with id  - 
+     16:25:19,910  INFO Job:91 - Adding aPropertyid to job with id  - 281854
+     16:25:19,911  INFO Job:91 - Adding aPropertytitle to job with id  - 281854
+     16:25:19,912  INFO Job:91 - Adding aPropertyconfidence_fields to job with id  - 281854
+     16:25:19,913  INFO Job:91 - Adding aPropertyunits_count to job with id  - 281854
+     16:25:19,914  INFO Job:91 - Adding aPropertycreated_at to job with id  - 281854
+     16:25:19,915  INFO Job:91 - Adding aPropertygold to job with id  - 281854
+     16:25:19,916  INFO Job:91 - Adding aPropertypages_per_assignment to job with id  - 281854
+     16:25:19,917  INFO Job:91 - Adding aPropertyoptions to job with id  - 281854
+     16:25:19,918  INFO Job:91 - Adding aPropertycompleted to job with id  - 281854
+     16:25:19,929  INFO Job:91 - Adding aPropertyorder_approved to job with id  - 281854
+     16:25:19,929  INFO Job:91 - Adding aPropertyalias to job with id  - 281854
+     16:25:19,931  INFO Job:91 - Adding aPropertyunits_remain_finalized to job with id  - 281854
+     16:25:19,932  INFO Job:91 - Adding aPropertysend_judgments_webhook to job with id  - 281854
+     16:25:19,932  INFO Job:91 - Adding aPropertyproblem to job with id  - 281854
+     16:25:19,934  INFO Job:91 - Adding aPropertyvariable_judgments_mode to job with id  - 281854
+     16:25:19,975  INFO JobController:158 - Uploading data in job with id  - 281854 from path log/crowd.csv
+     16:25:19,977  INFO WebJobCall:111 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs/281854/upload.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:22,243  INFO JobController:264 - Obtaining the status of the job with id  - 281854
+     16:25:22,828  INFO UnitControllerImpl:75 - Creating units for job with id  - 281854
+     16:25:22,832  INFO UnitControllerImpl:77 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs/281854/units.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:23,838  INFO JobController:218 - Obtaining units for job with id  - 281854 
+     16:25:24,002  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281854
+     16:25:24,003  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281854/units/337660581.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:24,757  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281854
+     16:25:24,758  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281854/units/337660580.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:25,682  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281854
+     16:25:25,683  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281854/units/337660583.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:25,907  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281854
+     16:25:25,908  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281854/units/337660582.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:55,760  INFO Job:91 - Adding aPropertytitle to job with id  - 
+     16:25:55,768  INFO Job:91 - Adding aPropertyinstructions to job with id  - 
+     16:25:55,770  INFO Job:91 - Adding aPropertycml to job with id  - 
+     16:25:55,772  INFO JobController:81 - Create the job with id  -  
+     16:25:55,878  INFO UnitControllerImpl:77 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:25:58,578  INFO Job:91 - Adding aPropertyinstructions to job with id  - 
+     16:25:58,579  INFO Job:91 - Adding aPropertyjs to job with id  - 
+     16:25:58,580  INFO Job:91 - Adding aPropertyjudgments_count to job with id  - 
+     16:25:58,581  INFO Job:91 - Adding aPropertymax_judgments_per_ip to job with id  - 
+     16:25:58,581  INFO Job:91 - Adding aPropertydesign_verified to job with id  - 
+     16:25:58,582  INFO Job:91 - Adding aPropertyauto_order to job with id  - 
+     16:25:58,583  INFO Job:91 - Adding aPropertyauto_order_timeout to job with id  - 
+     16:25:58,584  INFO Job:91 - Adding aPropertyjudgments_per_unit to job with id  - 
+     16:25:58,585  INFO Job:91 - Adding aPropertyexpected_judgments_per_unit to job with id  - 
+     16:25:58,586  INFO Job:91 - Adding aPropertymax_judgments_per_unit to job with id  - 
+     16:25:58,587  INFO Job:91 - Adding aPropertypublic_data to job with id  - 
+     16:25:58,588  INFO Job:91 - Adding aPropertyrequire_worker_login to job with id  - 
+     16:25:58,589  INFO Job:91 - Adding aPropertyfields to job with id  - 
+     16:25:58,589  INFO Job:91 - Adding aPropertymax_judgments_per_worker to job with id  - 
+     16:25:58,590  INFO Job:91 - Adding aPropertyincluded_countries to job with id  - 
+     16:25:58,591  INFO Job:91 - Adding aPropertyworker_ui_remix to job with id  - 
+     16:25:58,592  INFO Job:91 - Adding aPropertycompleted_at to job with id  - 
+     16:25:58,598  INFO Job:91 - Adding aPropertyminimum_requirements to job with id  - 
+     16:25:58,599  INFO Job:91 - Adding aPropertyunits_per_assignment to job with id  - 
+     16:25:58,600  INFO Job:91 - Adding aPropertyproject_number to job with id  - 
+     16:25:58,600  INFO Job:91 - Adding aPropertymax_unit_confidence to job with id  - 
+     16:25:58,601  INFO Job:91 - Adding aPropertycustom_key to job with id  - 
+     16:25:58,602  INFO Job:91 - Adding aPropertysupport_email to job with id  - 
+     16:25:58,603  INFO Job:91 - Adding aPropertyupdated_at to job with id  - 
+     16:25:58,605  INFO Job:91 - Adding aPropertyauto_order_threshold to job with id  - 
+     16:25:58,606  INFO Job:91 - Adding aPropertyminimum_account_age_seconds to job with id  - 
+     16:25:58,607  INFO Job:91 - Adding aPropertymin_unit_confidence to job with id  - 
+     16:25:58,608  INFO Job:91 - Adding aPropertylanguage to job with id  - 
+     16:25:58,609  INFO Job:91 - Adding aPropertydesired_requirements to job with id  - 
+     16:25:58,610  INFO Job:91 - Adding aPropertycss to job with id  - 
+     16:25:58,611  INFO Job:91 - Adding aPropertygold_per_assignment to job with id  - 
+     16:25:58,612  INFO Job:91 - Adding aPropertyexcluded_countries to job with id  - 
+     16:25:58,619  INFO Job:91 - Adding aPropertystate to job with id  - 
+     16:25:58,622  INFO Job:91 - Adding aPropertyexecution_mode to job with id  - 
+     16:25:58,623  INFO Job:91 - Adding aPropertygolds_count to job with id  - 
+     16:25:58,627  INFO Job:91 - Adding aPropertywebhook_uri to job with id  - 
+     16:25:58,629  INFO Job:91 - Adding aPropertycml to job with id  - 
+     16:25:58,630  INFO Job:91 - Adding aPropertyid to job with id  - 281860
+     16:25:58,633  INFO Job:91 - Adding aPropertytitle to job with id  - 281860
+     16:25:58,635  INFO Job:91 - Adding aPropertyconfidence_fields to job with id  - 281860
+     16:25:58,636  INFO Job:91 - Adding aPropertyunits_count to job with id  - 281860
+     16:25:58,637  INFO Job:91 - Adding aPropertycreated_at to job with id  - 281860
+     16:25:58,638  INFO Job:91 - Adding aPropertygold to job with id  - 281860
+     16:25:58,639  INFO Job:91 - Adding aPropertypages_per_assignment to job with id  - 281860
+     16:25:58,641  INFO Job:91 - Adding aPropertyoptions to job with id  - 281860
+     16:25:58,641  INFO Job:91 - Adding aPropertycompleted to job with id  - 281860
+     16:25:58,652  INFO Job:91 - Adding aPropertyorder_approved to job with id  - 281860
+     16:25:58,653  INFO Job:91 - Adding aPropertyalias to job with id  - 281860
+     16:25:58,654  INFO Job:91 - Adding aPropertyunits_remain_finalized to job with id  - 281860
+     16:25:58,655  INFO Job:91 - Adding aPropertysend_judgments_webhook to job with id  - 281860
+     16:25:58,656  INFO Job:91 - Adding aPropertyproblem to job with id  - 281860
+     16:25:58,657  INFO Job:91 - Adding aPropertyvariable_judgments_mode to job with id  - 281860
+     16:25:58,680  INFO JobController:158 - Uploading data in job with id  - 281860 from path log/crowd.csv
+     16:25:58,682  INFO WebJobCall:111 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs/281860/upload.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:26:00,942  INFO JobController:264 - Obtaining the status of the job with id  - 281860
+     16:26:01,516  INFO UnitControllerImpl:75 - Creating units for job with id  - 281860
+     16:26:01,517  INFO UnitControllerImpl:77 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs/281860/units.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:26:02,231  INFO JobController:218 - Obtaining units for job with id  - 281860 
+     16:26:02,550  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281860
+     16:26:02,551  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281860/units/337661610.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:26:03,154  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281860
+     16:26:03,155  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281860/units/337661613.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:26:03,419  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281860
+     16:26:03,420  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281860/units/337661611.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:26:03,655  INFO UnitControllerImpl:51 - Refreshing the units for job with id  - 281860
+     16:26:03,657  INFO UnitControllerImpl:159 - Reading url - https://api.crowdflower.com/v1/jobs/281860/units/337661609.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:31:41,978  INFO Job:91 - Adding aPropertytitle to job with id  - 
+     16:31:41,987  INFO Job:91 - Adding aPropertyinstructions to job with id  - 
+     16:31:41,989  INFO Job:91 - Adding aPropertycml to job with id  - 
+     16:31:41,992  INFO JobController:81 - Create the job with id  -  
+     16:31:42,210  INFO UnitControllerImpl:77 - HTTP POST @ url - https://api.crowdflower.com/v1/jobs.json?key=0d211e8c6c9d020bba1e125a2d7b6aace1f931bd
+     16:31:45,081  INFO Job:91 - Adding aPropertyinstructions to job with id  - 
+     16:31:45,082  INFO Job:91 - Adding aPropertyjs to job with id  - 
+     16:31:45,083  INFO Job:91 - Adding aPropertyjudgments_count to job with id  - 
+     16:31:45,084  INFO Job:91 - Adding aPropertymax_judgments_per_ip to job with id  - 
+     16:31:45,085  INFO Job:91 - Adding aPropertydesign_verified to job with id  - 
+     16:31:45,086  INFO Job:91 - Adding aPropertyauto_order to job with id  - 
+     16:31:45,087  INFO Job:91 - Adding aPropertyauto_order_timeout to job with id  - 
+     16:31:45,088  INFO Job:91 - Adding aPropertyjudgments_per_unit to job with id  - 
+     16:31:45,089  INFO Job:91 - Adding aPropertyexpected_judgments_per_unit to job with id  - 
+     16:31:45,091  INFO Job:91 - Adding aPropertymax_judgments_per_unit to job with id  - 
+     16:31:45,092  INFO Job:91 - Adding aPropertypublic_data to job with id  - 
+     16:31:45,093  INFO Job:91 - Adding aPropertyrequire_worker_login to job with id  - 
+     16:31:45,094  INFO Job:91 - Adding aPropertyfields to job with id  - 
+     16:31:45,095  INFO Job:91 - Adding aPropertymax_judgments_per_worker to job with id  - 
+     16:31:45,096  INFO Job:91 - Adding aPropertyincluded_countries to job with id  - 
+     16:31:45,097  INFO Job:91 - Adding aPropertyworker_ui_remix to job with id  - 
+     16:31:45,098  INFO Job:91 - Adding aPropertycompleted_at to job with id  - 
+     16:31:45,099  INFO Job:91 - Adding aPropertyminimum_requirements to job with id  - 
+     16:31:45,101  INFO Job:91 - Adding aPropertyunits_per_assignment to job with id  - 
+     16:31:45,101  INFO Job:91 - Adding aPropertyproject_number to job with id  - 
+     16:31:45,103  INFO Job:91 - Adding aPropertymax_unit_confidence to job with id  - 
+     16:31:45,104  INFO Job:91 - Adding aPropertycustom_key to job with id  - 
+     16:31:45,105  INFO Job:91 - Adding aPropertysupport_email to job with id  - 
+     16:31:45,106  INFO Job:91 - Adding aPropertyupdated_at to job with id  - 
+     16:31:45,110  INFO Job:91 - Adding aPropertyauto_order_threshold to job with id  - 
+     16:31:45,111  INFO Job:91 - Adding aPropertyminimum_account_age_seconds to job with id  - 
+     16:31:45,112  INFO Job:91 - Adding aPropertymin_unit_confidence to job with id  - 
+     16:31:45,113  INFO Job:91 - Adding aPropertylanguage to job with id  - 
+     16:31:45,114  INFO Job:91 - Adding aPropertydesired_requirements to job with id  - 
+     16:31:45,115  INFO Job:91 - Adding aPropertycss to job with id  - 
+     16:31:45,116  INFO Job:91 - Adding aPropertygold_per_assignment to job with id  - 
+     16:31:45,117  INFO Job:91 - Adding aPropertyexcluded_countries to job with id  - 
+     16:31:45,118  INFO Job:91 - Adding aPropertystate to job with id  - 
+     16:31:45,118  INFO Job:91 - Adding aPropertyexecution_mode to job with id  - 
+     16:31:45,119  INFO Job:91 - Adding aPropertygolds_count to job with id  - 
+     16:31:45,120  INFO Job:91 - Adding aPropertywebhook_uri to job with id  - 
+     16:31:45,121  INFO Job:91 - Adding aPropertycml to job with id  - 
+     16:31:45,121  INFO Job:91 - Adding aPropertyid to job with id  - 281895
+     16:31:45,122  INFO Job:91 - Adding aPropertytitle to job with id  - 281895
+     16:31:45,123  INFO Job:91 - Adding aPropertyconfidence_fields to job with id  - 281895
+     16:31:45,124  INFO Job:91 - Adding aPropertyunits_count to job with id  - 281895
+     16:31:45,125  INFO Job:91 - Adding aPropertycreated_at to job with id  - 281895
+     16:31:45,125  INFO Job:91 - Adding aPropertygold to job with id  - 281895
+     16:31:45,126  INFO Job:91 - Adding aPropertypages_per_assignment to job with id  - 281895
+     16:31:45,128  INFO Job:91 - Adding aPropertyoptions to job with id  - 281895
+     16:31:45,129  INFO Job:91 - Adding aPropertycompleted to job with id  - 281895
+     16:31:45,140  INFO Job:91 - Adding aPropertyorder_approved to job with id  - 281895
+     16:31:45,141  INFO Job:91 - Adding aPropertyalias to job with id  - 281895
+     16:31:45,142  INFO Job:91 - Adding aPropertyunits_remain_finalized to job with id  - 281895
+     16:31:45,142  INFO Job:91 - Adding aPropertysend_judgments_webhook to job with id  - 281895
+     16:31:45,143  INFO Job:91 - Adding aPropertyproblem to job with id  - 281895
+     16:31:45,144  INFO Job:91 - Adding aPropertyvariable_judgments_mode to job with id  - 281895
+     16:31:45,152  INFO JobController:158 - Uploading data in job with id  -  from path log/crowd.csv
+     
