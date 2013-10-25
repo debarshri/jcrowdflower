@@ -7,9 +7,9 @@ This project is part of Web information Systems groups.
 
 Credits to
 
-Prof. Alessandro Bozzon (project conceptualization)
-Prof. Jasper Oosterman (reviewer)
-Debarshi Basak (main developer)
+- Prof. Alessandro Bozzon (project conceptualization)
+- Prof. Jasper Oosterman (reviewer)
+- Debarshi Basak (main developer)
 
 
 ### jCrowdFlower
