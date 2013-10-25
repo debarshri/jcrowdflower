@@ -11,6 +11,7 @@ Credits to
 - Prof. Jasper Oosterman (reviewer)
 - Debarshi Basak (main developer)
 
+![tudelft](http://www.se.ewi.tudelft.nl/dmcd2011/images/TU-Delft_logo.gif)
 
 ### jCrowdFlower
 
