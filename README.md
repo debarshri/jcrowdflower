@@ -19,9 +19,7 @@ This projects is a Java wrapper for web APIs exposed by CrowdFlower. This projec
 
 You need to build the project as follows
 
-```
-  mvn clean install
-```
+```  mvn clean install ```
 
 
 ### Tutorial
