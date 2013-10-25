@@ -31,11 +31,13 @@ Simple job creation
 - Add a property apiKey="your-api-key"
 - Include this project in your pom.xml as follows
 
-``` <dependency>
+```
+<dependency>
     <groupId>crowdflower-java</groupId>
     <artifactId>crowdflower-java</artifactId>
     <version>1.0.1-SNAPSHOT</version>
-<dependency> ```
+<dependency>
+```
 
 Then the following is the implementation for creating a job
 
