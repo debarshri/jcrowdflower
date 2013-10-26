@@ -1,6 +1,7 @@
 package nl.wisdelft.cf.order;
 
 import nl.wisdelft.cf.*;
+import nl.wisdelft.cf.datamodel.*;
 import nl.wisdelft.cf.job.*;
 import nl.wisdelft.cf.weblayer.*;
 import org.apache.http.*;
@@ -10,63 +11,45 @@ import org.fest.util.*;
 import java.net.*;
 import java.util.*;
 
+import static nl.wisdelft.cf.weblayer.WebUtil.convertAttributesToNameValuePair;
+
 public class OrderControllerImpl implements OrderController {
 
     private String apiKey;
     private String url = "https://api.crowdflower.com/v1/jobs/";
     private String jobId;
-    private List<NameValuePair> attributes;
     private WebUtil theWebUtil;
     private WebCall theWebCall;
 
-    public OrderControllerImpl(String jobId)
+    public OrderControllerImpl(String aApiKey)
     {
-       this(jobId, new CrowdFlowerFactory());
+       this(aApiKey, new CrowdFlowerFactory());
     }
 
     @VisibleForTesting OrderControllerImpl(
-            String aJobId,
-            CrowdFlowerFactory aCrowdFlowerFactory)
-    {
-        jobId = aJobId;
-        attributes = aCrowdFlowerFactory.createAttributes();
-    }
-
-    public OrderControllerImpl(
-            String jobId,
-            String apiKey)
-    {
-        this(jobId,apiKey, new CrowdFlowerFactory());
-    }
-
-    @VisibleForTesting OrderControllerImpl(
-            String aJobId,
             String aApiKey,
             CrowdFlowerFactory aCrowdFlowerFactory)
     {
-        jobId = aJobId;
         apiKey = aApiKey;
-        attributes = aCrowdFlowerFactory.createAttributes();
-        theWebUtil = aCrowdFlowerFactory.createWebUtil();
         theWebCall = aCrowdFlowerFactory.createWebCall();
-        attributes.add(new BasicNameValuePair("key",
-                                              aApiKey));
+        theWebUtil = aCrowdFlowerFactory.createWebUtil();
     }
 
-    @Override
-    public void create()
+    @Override public void create(final Order aOrder)
     {
-        url = url + jobId + "/orders.json?key="+apiKey;
-        theWebCall.create(url,
-                       attributes);
+        url = url + aOrder.getJobId() + "/orders.json?key="+apiKey;
+        String myOrder = theWebCall.create(url,
+                                     convertAttributesToNameValuePair(aOrder.getAttributes()));
+
+        System.out.println(myOrder);
     }
 
     @Override
-    public String retrieve(String id)
+    public String retrieve(String aJobId)
     {
         try
         {
-            url = url + jobId + "/" + "/orders/" + id + ".json?key=" + apiKey;
+            url = url + jobId + "/" + "/orders/" + aJobId + ".json?key=" + apiKey;
             return theWebUtil.urlReader(new URL(url));
         }
         catch (MalformedURLException e)
@@ -78,18 +61,16 @@ public class OrderControllerImpl implements OrderController {
 
     }
 
-    @Override
-    public void addChannel(String channel)
+    @Override public void pause(final String aJobId)
     {
-        attributes.add(new BasicNameValuePair("channels[0]",
-                                              channel));
+        JobController myJobController = CrowdFlowerFactory.getJobController();
+        myJobController.pause(aJobId);
     }
 
-    @Override
-    public void setDebitUnitCount(String count)
+    @Override public void resume(final String aJobId)
     {
-        attributes.add(new BasicNameValuePair("debit[units_count]",
-                                              count));
+        JobController myJobController = CrowdFlowerFactory.getJobController();
+        myJobController.resume(aJobId);
     }
 
     @Override

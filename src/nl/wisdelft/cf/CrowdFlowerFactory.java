@@ -2,6 +2,7 @@ package nl.wisdelft.cf;
 
 import com.google.common.collect.*;
 import nl.wisdelft.cf.job.*;
+import nl.wisdelft.cf.order.*;
 import nl.wisdelft.cf.unit.*;
 import nl.wisdelft.cf.weblayer.*;
 import org.apache.http.*;
@@ -41,6 +42,11 @@ public class CrowdFlowerFactory {
     public static JobController getJobController()
     {
         return theCrowdFlower.getJobController();
+    }
+
+    public static OrderController getOrderController()
+    {
+        return theCrowdFlower.getOrderController();
     }
 
     public WebCall createWebCall()

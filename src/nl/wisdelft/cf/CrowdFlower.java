@@ -2,6 +2,7 @@ package nl.wisdelft.cf;
 
 import nl.wisdelft.cf.datamodel.*;
 import nl.wisdelft.cf.job.*;
+import nl.wisdelft.cf.order.*;
 import nl.wisdelft.cf.unit.*;
 
 import java.util.*;
@@ -37,4 +38,6 @@ public interface CrowdFlower {
     public Account getAccount();
 
     public UnitController getUnitController();
+
+    public OrderController getOrderController();
 }

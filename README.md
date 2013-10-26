@@ -78,20 +78,21 @@ public class CrowdFlowerTutorial {
 
         myJobController.upload(myJobAfterCreation, "log/crowd.csv", "text/csv");
 
-        OrderController order = myJobController.order(myJobAfterCreation.getId());
+        OrderController myOrderController = CrowdFlowerFactory.getOrderController();
 
-        order.setDebitUnitCount("3");
-        order.addChannel("amt");
+        Order myOrder = new Order(myJobAfterCreation.getId());
+        myOrder.setDebitUnitCount("3");
+        myOrder.addChannel("amt");
 
         /*
         * Costs money
         */
 
-        order.create();
+        myOrderController.create(myOrder);
         /**
          * Takes some time to create
          */
-        order.cancel(myJobAfterCreation.getId());
+        myOrderController.cancel(myJobAfterCreation.getId());
     }
 }
 

@@ -87,12 +87,6 @@ public interface JobController {
 
     public JSONObject getUnitsStatus(String aJobId);
 
-    /**
-     * @return TODO
-     * @Web [ web call ] Creates an new order for the job
-     */
-
-    public OrderController order(String aJobId);
 
     /**
      * [ web call ] Pauses the job

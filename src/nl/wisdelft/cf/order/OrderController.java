@@ -1,16 +1,17 @@
 package nl.wisdelft.cf.order;
 
+import nl.wisdelft.cf.datamodel.*;
+
 public interface OrderController {
 
-    // Check Parameters
-    public void create();
+    public void create(Order aOrder);
 
-    public String retrieve(String id);
+    public String retrieve(String aJobId);
 
-    public void addChannel(String channel);
+    public void pause(String aJobId);
 
-    public void setDebitUnitCount(String count);
+    public void resume(String aJobId);
 
-    public void cancel(String id);
+    public void cancel(String aJobId);
 
 }

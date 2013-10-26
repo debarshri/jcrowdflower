@@ -3,6 +3,7 @@ package nl.wisdelft.cf;
 import com.google.common.collect.*;
 import nl.wisdelft.cf.datamodel.*;
 import nl.wisdelft.cf.job.*;
+import nl.wisdelft.cf.order.*;
 import nl.wisdelft.cf.unit.*;
 import org.json.*;
 import org.slf4j.*;
@@ -124,14 +125,18 @@ public class CrowdFlowerImpl implements CrowdFlower {
     @Override
     public JobController getJobController()
     {
-
         return new JobControllerImpl(API_KEY);
+    }
+
+    @Override
+    public OrderController getOrderController()
+    {
+        return new OrderControllerImpl(API_KEY);
     }
 
     @Override
     public UnitController getUnitController()
     {
-
         return new UnitControllerImpl(API_KEY);
     }
 

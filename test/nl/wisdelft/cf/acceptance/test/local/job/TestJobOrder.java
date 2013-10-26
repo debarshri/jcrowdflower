@@ -72,17 +72,6 @@ public class TestJobOrder {
             e.printStackTrace();
         }
 
-        OrderController order = myJobController.order(myJobToBeUpdated.getId());
-
-        order.setDebitUnitCount("3");
-        order.addChannel("amt");
-
-/*
-*
-* Costs money
-*
-*/
-        	order.create();
     }
 
 }

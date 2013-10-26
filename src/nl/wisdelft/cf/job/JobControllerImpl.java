@@ -270,18 +270,6 @@ public class JobControllerImpl implements JobController {
     }
 
     @Override
-    public OrderController order(String aJobId)
-    {
-
-        LOGGER.info("Creating order for job with id  - {}",
-                    aJobId);
-        return new OrderControllerImpl(aJobId,
-                             apiKey);
-
-
-    }
-
-    @Override
     public void pause(String aJobId)
     {
         LOGGER.info("Pausing job with id  - {}",
